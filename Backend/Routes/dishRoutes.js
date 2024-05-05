@@ -2,7 +2,7 @@ const express = require("express");
 
 const router = express.Router();
 
-const { getDishes } = require("../Controllers/dishController");
+const { getDishes } = require("../controllers/dishController");
 
 router.get("/dishes", getDishes);
 

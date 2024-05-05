@@ -5,6 +5,7 @@ const Time = require('./middleware/Time')
 const cors = require("cors");
 const dishes = require("./Routes/dishRoutes");
 // const userRoutes = require("./routes/userRoutes");
+const Auth = require("./Routes/Auth");
 require("dotenv").config();
 
 const app = express();

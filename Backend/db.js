@@ -6,7 +6,7 @@ module.exports = function (callback) {
         else {
             // var database =
             console.log("connected to mongo")
-            const foodCollection = await mongoose.connection.db.collection("food_items");
+            const foodCollection = await mongoose.connection.db.collection("fooditems");
             foodCollection.find({}).toArray(async function (err, data) {
                 const categoryCollection = await mongoose.connection.db.collection("Categories");
                 categoryCollection.find({}).toArray(async function (err, Catdata) {
@@ -14,10 +14,7 @@ module.exports = function (callback) {
 
                 })
             });
-            // listCollections({name: 'food_items'}).toArray(function (err, database) {
-            // });
-            //     module.exports.Collection = database;
-            // });
+            
         }
     })
 };

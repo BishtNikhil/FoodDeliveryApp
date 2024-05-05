@@ -1,6 +1,7 @@
 const express = require('express')
 const User = require('../models/User')
 const Order = require('../models/Orders')
+const foodData = require('../json_data/foodData.json')
 const router = express.Router()
 const { body, validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs')
